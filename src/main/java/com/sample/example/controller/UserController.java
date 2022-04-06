@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
 
-    private UserHandler userHandler;
+    private final UserHandler userHandler;
 
     @Autowired
     public UserController(UserHandler userHandler) {
